@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vue cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+    <!-- day.js cdn -->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Boolzap</title>
+</head>
+<body>
+    <div id="root">
+
+        <!-- LEFT SIDE -->
+        <div id="l-side">
+
+            <!-- nav utente -->
+            <div class="user-nav">
+                <div class="l-user-icons">
+                    <img src= alt="Avatar Utente">
+                    <span class="user-name"></span>
+                </div>
+                <div class="r-user-icons">
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <!-- /nav utente -->
+
+            <!-- notifiche -->
+            <div class="notifications">
+                <div class="bell-background">
+                    <i class="fas fa-bell-slash"></i>
+                </div>
+                <div class="notifications-texts">
+                    <div class="strong">Ricevi notifiche di nuovi messaggi</div>
+                    
+                </div>           
+            </div>
+            <!-- /notifiche -->
+
+            <!-- ricerca contatti -->
+            <div class="chat-search">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <!-- /ricerca contatti -->
+
+            <!-- lista contatti -->
+            <div class="contact-list">
+                
+                    <div class="l-contact">
+                        <img :src= alt="Avatar Contatto">
+                        <div class="info">
+                            <div class="contact-name"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="r-contact">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- /lista contatti -->
+
+        </div>
+        <!-- /LEFT SIDE -->
+
+       
+
+    </div>
+
+    <!-- my js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
