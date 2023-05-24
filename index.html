@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- vue cdn -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
-    <!-- day.js cdn -->
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-    <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!-- my css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Boolzap</title>
 </head>
 <body>
     <div id="root">
 
-        <!-- LEFT SIDE -->
+        <!-- lato sinistro -->
         <div id="l-side">
 
             <!-- nav utente -->
             <div class="user-nav">
                 <div class="l-user-icons">
-                    <img src= alt="Avatar Utente">
+                    
                     <span class="user-name"></span>
                 </div>
                 <div class="r-user-icons">
@@ -43,25 +37,26 @@
                     <i class="fas fa-bell-slash"></i>
                 </div>
                 <div class="notifications-texts">
-                    <div class="strong">Ricevi notifiche di nuovi messaggi</div>
-                    
+                    <div class="strong">Nuovi messaggi</div>
+                    <a href="#">Attiva le notifiche desktop</a>
                 </div>           
             </div>
-            <!-- /notifiche -->
+            
 
-            <!-- ricerca contatti -->
+            <!-- barra di ricerca contatti -->
             <div class="chat-search">
                 <div class="search-icon">
                     <i class="fas fa-search"></i>
                 </div>
+                <input type="text" placeholder="Ricerca chat" v-model="search" @keydown.enter="filteredContacts()">
             </div>
-            <!-- /ricerca contatti -->
+            
 
-            <!-- lista contatti -->
+            <!-- rubrica-->
             <div class="contact-list">
                 
                     <div class="l-contact">
-                        <img :src= alt="Avatar Contatto">
+                        <img :src="filteredContacts[index].avatar" alt="Avatar Contatto">
                         <div class="info">
                             <div class="contact-name"></div>
                             
@@ -72,12 +67,53 @@
                     </div>
                 </div>
             </div>
-            <!-- /lista contatti -->
+            
 
         </div>
-        <!-- /LEFT SIDE -->
+        
 
-       
+        <!-- RIGHT SIDE -->
+        <div id="r-side">
+
+            <!-- navigazione contatto -->
+            <div class="contact-nav">
+                <div class="l-contact-icons">
+                    <img :src= alt="Avatar Utente">
+                    <div class="contact-info">
+                        <div class="contact-name"></div>
+                        <div  class="last-access">Ultimo accesso oggi alle ore</div>
+                    </div>
+                </div>
+                <div class="r-contact-icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            
+
+            <!-- messaggi ricevuti e inviati -->
+            <div class="message-area">
+                <div 
+                    <span></span>
+                    <div class="dropdown" >
+                        
+                        <i class="fas fa-trash"</i>
+                    </div>
+                </div>
+            </div>
+           
+
+            <!-- controlli nuovo messaggio -->
+            <div class="text-controls">
+                <i class="far fa-smile"></i>
+                <input type="text" placeholder="Scrivi un messaggio" 
+                <i class="fas fa-microphone"></i>
+            </div>
+            <!-- /controlli nuovo messaggio -->
+
+        </div>
+        
 
     </div>
 

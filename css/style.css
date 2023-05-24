@@ -174,3 +174,133 @@ body {
     font-size: 12px;
     color: grey;
 }
+/* right side */
+
+#r-side {
+    width: 65%;
+    min-width: 500px;
+    height: 100%;
+}
+
+#r-side .contact-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 10px 20px 10px 10px;
+    background-color: #eaeaea;
+    border-left: 1px solid lightgrey;
+}
+
+#r-side .l-contact-icons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#r-side .l-contact-icons img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+#r-side .l-contact-icons .contact-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#r-side .l-contact-icons .last-access {
+    font-size: 14px;
+    color: grey;
+}
+
+#r-side .r-contact-icons  {
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+#r-side .r-contact-icons i {
+    margin-left: 10px;
+}
+
+
+#r-side .message-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 145px);
+    padding: 50px 70px;
+    background-image: url("../img/whatsapp-background.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+#r-side .message-area .message {
+    position: relative;
+    width: 350px;
+    padding: 10px 30px 20px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+#r-side .message-area .message .message-date {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 10px;
+    color: grey;
+}
+
+
+
+#r-side .message-area .dropdown {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 0;
+    transform: translateX(-50%);
+    color: red;
+    cursor: pointer;
+}
+
+#r-side .message-area .dropdown-active {
+    display: block;
+}
+
+.message-sent {
+    align-self: flex-end;
+    background-color: #D5F9BA;
+}
+
+.message-received {
+    background-color: #fff;
+}
+
+#r-side .text-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding: 10px 30px;
+    background-color: #eaeaea;
+    border-left: 1px solid lightgrey;
+}
+
+#r-side .text-controls i {
+    font-size: 24px;
+    color: #6b7376;
+}
+
+#r-side .text-controls input {
+    width: 100%;
+    height: 100%;
+    margin: 0 40px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background-color: #fff;
+}
