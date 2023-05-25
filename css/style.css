@@ -25,139 +25,139 @@ body {
 
 /* left side */
 
-#l-side {
+#side_left {
     width: 35%;
     min-width: 450px;
     height: 100%;
 }
 
-#l-side .user-nav {
+#side_left .user-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 70px;
     padding: 10px 20px 10px 10px;
-    background-color: #eaeaea;
+    background-color: white;
 }
 
-#l-side .user-nav .l-user-icons {
+#side_left .user-nav .left_icons {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-#l-side .user-nav .l-user-icons img {
+#side_left .user-nav .left_icons img {
     height: 100%;
     margin-right: 10px;
 }
 
-#l-side .user-nav .l-user-icons .user-name {
+#side_left .user-nav .left_icons .user-name {
     font-size: 14px;
     font-weight: 700;
 }
 
-#l-side .user-nav .r-user-icons  {
+#side_left .user-nav .right_icons  {
     font-size: 20px;
-    color: #b1b1b1;
+    color: lightgrey;
 }
 
-#l-side .user-nav .r-user-icons i {
+#side_left .user-nav .right_icons i {
     margin-left: 10px;
 }
 
 
-#l-side .notifications {
+#side_left .notifications {
     display: flex;
     align-items: center;
     width: 100%;
     height: 90px;
     padding: 15px;
-    background-color: #8EDAFC;
+    background-color: lightblue;
 }
 
-#l-side .notifications .bell-background {
+#side_left .notifications .bell-background {
     height: 60px;
     width: 60px;
     margin-right: 10px;
     line-height: 60px;
     text-align: center;
     font-size: 22px;
-    color: #8EDAFC;
-    background-color: #fff;
+    color: lightblue;
+    background-color: white;
     border-radius: 50%;
 }
 
-#l-side .notifications .notifications.texts .strong {
+#side_left .notifications .notifications.texts .strong {
     font-weight: 700;
 }
 
-#l-side .notifications .notifications-texts > a {
+#side_left .notifications .notifications-texts > a {
     color: grey;
     font-size: 14px;
 }
 
-#l-side .chat-search {
+#side_left .chat-search {
     display: flex;
     width: 100%;
     padding: 10px;
-    background-color: #fafafa;
+    background-color: white;
 }
 
-#l-side .search-icon {
+#side_left .search-icon {
     width: 80px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    border: 1px solid #e5e5e5;
+    border: 1px solid white;
     border-right: 0;
-    background-color: #fff;
+    background-color: white;
     color: lightgrey;
 }
 
-#l-side .chat-search input {
+#side_left .chat-search input {
     width: calc(100% - 80px);
     height: 35px;
     padding: 10px;
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
+    background-color: white;
+    border: 1px solid white;
 }
 
-#l-side .contact-list {
+#side_left .contact-list {
     width: 100%;
     height: calc(100% - 215px);
-    background-color: #fff;
+    background-color: white;
     overflow-y: scroll;
 }
 
-#l-side .contact-list .contact {
+#side_left .contact-list .contact {
     display: flex;
     justify-content: space-between;
     height: 80px;
     padding: 10px 10px 10px 20px;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid white;
     cursor: pointer;
 }
 
 .contact-active {
-    background-color: #eaeaea;
+    background-color: white;
 }
 
-#l-side .contact-list .contact .l-contact {
+#side_left .contact-list .contact .l-contact {
     display: flex;
     height: 100%;
 }
 
-#l-side .contact-list .contact .l-contact img {
+#side_left .contact-list .contact .l-contact img {
     height: 100%;
     margin-right: 20px;
 }
 
-#l-side .contact-list .contact .l-contact .contact-name {
+#side_left .contact-list .contact .l-contact .contact-name {
     font-weight: 700;
 }
 
-#l-side .contact-list .contact .l-contact .last-message {
+#side_left .contact-list .contact .l-contact .last-message {
     width: 200px; 
     white-space: nowrap; 
     overflow: hidden;
@@ -166,65 +166,65 @@ body {
     color: grey;
 }
 
-#l-side .contact-list .contact .r-contact {
+#side_left .contact-list .contact .r-contact {
     height: 100%;
 }
 
-#l-side .contact-list .contact .message-time {
+#side_left .contact-list .contact .message-time {
     font-size: 12px;
     color: grey;
 }
 /* right side */
 
-#r-side {
+#side_right {
     width: 65%;
     min-width: 500px;
     height: 100%;
 }
 
-#r-side .contact-nav {
+#side_right .contact-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 70px;
     padding: 10px 20px 10px 10px;
-    background-color: #eaeaea;
+    background-color: white;
     border-left: 1px solid lightgrey;
 }
 
-#r-side .l-contact-icons {
+#side_right .l-contact-icons {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-#r-side .l-contact-icons img {
+#side_right .l-contact-icons img {
     height: 100%;
     margin-right: 10px;
 }
 
-#r-side .l-contact-icons .contact-name {
+#side_right .l-contact-icons .contact-name {
     font-size: 14px;
     font-weight: 700;
 }
 
-#r-side .l-contact-icons .last-access {
+#side_right .l-contact-icons .last-access {
     font-size: 14px;
     color: grey;
 }
 
-#r-side .r-contact-icons  {
+#side_right .r-contact-icons  {
     font-size: 20px;
-    color: #b1b1b1;
+    color: grey;
 }
 
-#r-side .r-contact-icons i {
+#side_right .r-contact-icons i {
     margin-left: 10px;
 }
 
 
-#r-side .message-area {
+#side_right .message-area {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -236,7 +236,7 @@ body {
     overflow-y: scroll;
 }
 
-#r-side .message-area .message {
+#side_right .message-area .message {
     position: relative;
     width: 350px;
     padding: 10px 30px 20px 10px;
@@ -245,7 +245,7 @@ body {
     overflow-wrap: break-word;
 }
 
-#r-side .message-area .message .message-date {
+#side_right .message-area .message .message-date {
     position: absolute;
     right: 5px;
     bottom: 5px;
@@ -255,7 +255,7 @@ body {
 
 
 
-#r-side .message-area .dropdown {
+#side_right .message-area .dropdown {
     display: none;
     position: absolute;
     z-index: 2;
@@ -266,41 +266,41 @@ body {
     cursor: pointer;
 }
 
-#r-side .message-area .dropdown-active {
+#side_right .message-area .dropdown-active {
     display: block;
 }
 
 .message-sent {
     align-self: flex-end;
-    background-color: #D5F9BA;
+    background-color: white;
 }
 
 .message-received {
-    background-color: #fff;
+    background-color: lightgreen;
 }
 
-#r-side .text-controls {
+#side_right .text-controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 75px;
     padding: 10px 30px;
-    background-color: #eaeaea;
+    background-color: white;
     border-left: 1px solid lightgrey;
 }
 
-#r-side .text-controls i {
+#side_right .text-controls i {
     font-size: 24px;
-    color: #6b7376;
+    color: grey;
 }
 
-#r-side .text-controls input {
+#side_right .text-controls input {
     width: 100%;
     height: 100%;
     margin: 0 40px;
     padding: 10px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid white;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: white;
 }
